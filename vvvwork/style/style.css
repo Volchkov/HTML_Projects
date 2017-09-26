@@ -1,0 +1,38 @@
+body {
+	 
+	  background-image: url(clouds.jpg);
+	 }
+
+	  h1 {background-color: green;}
+	  h1 {font-family: arial, verdana, sans-serif;}
+	  h2 {font-family: "Times New Roman", serif; font-style: italic;}
+	  h1 {font-size: 30px;}
+	  h2 {font-size: 12pt;}
+	  h4 {background-color: red, font-size: 120%;}
+	  p {font-size: 1em;}
+	
+
+
+      .navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        width: 100px;
+      }
+      .navbar li {
+        border-left: 10px solid #666;
+        border-bottom: 1px solid #666;
+      }
+      .navbar a {
+        background-color: #949494;
+        color: #fff;
+        padding: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        border-left: 5px solid #33ADFF;
+        display: block;
+      }
+
+
+
+	  }

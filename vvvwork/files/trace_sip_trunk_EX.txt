@@ -1,0 +1,80 @@
+
+====================================================
+acme  ssh 10.32.252.11 ,   
+maint buavyoiwi   
+Пароль: acme  en пароль: packet
+====================================================  
+
+Просмотр на ACME, с какого IP регестрируется абонент, по номеру телефона:
+
+sh sipd endpoint-ip 380563710536
+
+
+
+
+                                      "ТРЕЙСЫ на ACME"
+
+!!!!! Для более полного трейса, порт 5060 указывать не нужно !!! 
+
+
+
+for private realm-id M01:140
+
+for public realm-id M01:208
+
+
+
+
+ press CONTROL-C to stop tracing, EXIT
+
+ stop at SBC
+  
+
+==============================================================================================
+ex. ftp://maint@10.32.252.10
+   other ex :
+//to copy file login from remote PC folder /usr/home/rms  to folder c:/temp/from on local PC
+
+ftp>ascii
+ftp:>lcd c:\temp\from
+ftp>cd /usr/home/rms
+ftp>get login
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ PRIVATE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Acme
+packet-trace start M01:140 10.37.0.36
+
+packet-trace stop M01:140 10.37.0.36
+
+
+go to OSS server 10.32.252.10 via SSH
+
+
+sudo tshark -i bond0 host 10.32.2.126 -n -w /tmp/private_test.pcap
+
+sudo /bin/chmod 666 /tmp/private_test.pcap
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ PUBLIC @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+Acme
+
+packet-trace start M01:208 178.209.66.98
+
+
+Acme
+packet-trace stop M01:208 178.209.66.98
+
+
+
+go to OSS server 10.32.252.10 via SSH
+
+sudo tshark -i bond0 host 10.32.2.126 -n -w /tmp/public_test.pcap
+sudo /bin/chmod 666 /tmp/public_test.pcap
+
+
+
