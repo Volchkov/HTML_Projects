@@ -1,0 +1,147 @@
+2017-09-04 08:56:48.225          app.c !Eltex pa_sip 3.1.6.67. Log started
+2017-09-04 08:56:48.225          app.c  set log_level 5
+2017-09-04 08:56:48.225          ipc.c  pbx-ipc SIP: TX (005)
+2017-09-04 08:56:48.225          ipc.c  		 15 24 01 00 05                                  .$...
+2017-09-04 08:56:48.225          ipc.c  PBXIPC-SIP. TX. trace 
+2017-09-04 08:56:48.225          ipc.c  		# trace-level [5]
+2017-09-04 08:56:58.264          ipc.c !pbx-ipc SIP: RX (418)
+2017-09-04 08:56:58.264          ipc.c  		 01 01 02 00 0A 04 03 02 00 01 00 23 0C 00 31 30 ...........#..10
+2017-09-04 08:56:58.264          ipc.c  		 2E 33 32 2E 32 35 35 2E 32 32 05 02 00 C4 13 08 .32.255.22......
+2017-09-04 08:56:58.264          ipc.c  		 2F 00 01 01 00 00 02 00 00 00 00 00 00 07 00 00 /...............
+2017-09-04 08:56:58.264          ipc.c  		 00 33 37 30 34 30 32 30 00 00 00 00 00 00 00 00 .3704020........
+2017-09-04 08:56:58.264          ipc.c  		 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2017-09-04 08:56:58.264          ipc.c  		 00 0A 2F 00 01 00 02 0A 02 00 00 00 00 00 00 0C ../.............
+2017-09-04 08:56:58.264          ipc.c  		 00 00 00 33 38 30 35 36 33 37 32 30 32 38 36 00 ...380563720286.
+2017-09-04 08:56:58.264          ipc.c  		 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2017-09-04 08:56:58.264          ipc.c  		 00 00 00 0E 1C 01 76 3D 30 0D 0A 6F 3D 6D 67 61 ......v=0..o=mga
+2017-09-04 08:56:58.264          ipc.c  		 70 70 20 34 34 35 31 34 34 38 36 37 20 31 37 31 pp 445144867 171
+2017-09-04 08:56:58.264          ipc.c  		 36 39 33 32 38 32 37 20 49 4E 20 49 50 34 20 31 6932827 IN IP4 1
+2017-09-04 08:56:58.264          ipc.c  		 30 2E 33 37 2E 30 2E 33 36 0D 0A 73 3D 2D 0D 0A 0.37.0.36..s=-..
+2017-09-04 08:56:58.264          ipc.c  		 63 3D 49 4E 20 49 50 34 20 31 30 2E 33 37 2E 30 c=IN IP4 10.37.0
+2017-09-04 08:56:58.264          ipc.c  		 2E 33 36 0D 0A 74 3D 30 20 30 0D 0A 6D 3D 61 75 .36..t=0 0..m=au
+2017-09-04 08:56:58.264          ipc.c  		 64 69 6F 20 32 30 30 32 32 20 52 54 50 2F 41 56 dio 20022 RTP/AV
+2017-09-04 08:56:58.264          ipc.c  		 50 20 38 20 30 20 31 38 20 31 30 31 0D 0A 61 3D P 8 0 18 101..a=
+2017-09-04 08:56:58.264          ipc.c  		 72 74 70 6D 61 70 3A 38 20 50 43 4D 41 2F 38 30 rtpmap:8 PCMA/80
+2017-09-04 08:56:58.264          ipc.c  		 30 30 0D 0A 61 3D 72 74 70 6D 61 70 3A 30 20 50 00..a=rtpmap:0 P
+2017-09-04 08:56:58.264          ipc.c  		 43 4D 55 2F 38 30 30 30 0D 0A 61 3D 72 74 70 6D CMU/8000..a=rtpm
+2017-09-04 08:56:58.264          ipc.c  		 61 70 3A 31 38 20 47 37 32 39 2F 38 30 30 30 0D ap:18 G729/8000.
+2017-09-04 08:56:58.264          ipc.c  		 0A 61 3D 66 6D 74 70 3A 31 38 20 61 6E 6E 65 78 .a=fmtp:18 annex
+2017-09-04 08:56:58.264          ipc.c  		 62 3D 6E 6F 0D 0A 61 3D 72 74 70 6D 61 70 3A 31 b=no..a=rtpmap:1
+2017-09-04 08:56:58.264          ipc.c  		 30 31 20 74 65 6C 65 70 68 6F 6E 65 2D 65 76 65 01 telephone-eve
+2017-09-04 08:56:58.264          ipc.c  		 6E 74 2F 38 30 30 30 0D 0A 61 3D 66 6D 74 70 3A nt/8000..a=fmtp:
+2017-09-04 08:56:58.264          ipc.c  		 31 30 31 20 30 2D 31 35 0D 0A 61 3D 70 74 69 6D 101 0-15..a=ptim
+2017-09-04 08:56:58.265          ipc.c  		 65 3A 33 30 0D 0A 61 3D 73 65 6E 64 72 65 63 76 e:30..a=sendrecv
+2017-09-04 08:56:58.265          ipc.c  		 0D 0A                                           ..
+2017-09-04 08:56:58.265          ipc.c  PBXIPC-SIP. RX. seize 
+2017-09-04 08:56:58.265          ipc.c  		# callref 040a
+2017-09-04 08:56:58.265          ipc.c  		# trunkID 01
+2017-09-04 08:56:58.265          ipc.c  		# Hostname '10.32.255.22'
+2017-09-04 08:56:58.265          ipc.c  		# port 5060
+2017-09-04 08:56:58.265          ipc.c  		# cdpn <3704020> (7) cat 0x00
+2017-09-04 08:56:58.265          ipc.c  		# cgpn <380563720286> (12) cat 0x0a
+2017-09-04 08:56:58.265          ipc.c  		# SDP len (284)
+2017-09-04 08:56:58.266      ipc_msg.c !ipc_msg_parse: msg type = seize [1]
+2017-09-04 08:56:58.266      ipc_msg.c  get_ie: ie [1][callref] size [2]
+2017-09-04 08:56:58.266      ipc_msg.c  get_ie: ie [3][trunk-id] size [2]
+2017-09-04 08:56:58.266      ipc_msg.c  get_ie: ie [35][hostname] size [12]
+2017-09-04 08:56:58.266      ipc_msg.c  get_ie: ie [5][port] size [2]
+2017-09-04 08:56:58.266      ipc_msg.c  get_ie: ie [8][cdpn] size [47]
+2017-09-04 08:56:58.266      ipc_msg.c  get_ie: ie [10][cgpn] size [47]
+2017-09-04 08:56:58.266      ipc_msg.c  get_ie: ie [14][sdp] size [284]
+2017-09-04 08:56:58.266          ipc.c  ipc_process: msg ptr = 0x1eb4f0. type [1]
+2017-09-04 08:56:58.266         call.c  call_seize: call 040a. try acquire. dest: <10.32.255.22:5060>
+2017-09-04 08:56:58.266         call.c  call_seize: call 040a. sdp [284] <0x2774c0>
+2017-09-04 08:56:58.266         call.c  call_seize: call 040a. try make call
+2017-09-04 08:56:58.266         call.c  call_seize: call 040a. Encapsulate ISUP: 'NO'
+2017-09-04 08:56:58.267         call.c  call_replace_sdp_ip: call 040a. Replace sdp ip by 10.37.0.36
+2017-09-04 08:56:58.267    dlg0x277e54  UAC dialog created
+2017-09-04 08:56:58.267         call.c  make_call: call 040a.
+
+R-URI   <sip:3704020@10.32.255.22:5060>
+From    "380563720286" <sip:380563720286@10.37.0.36:5060;user=phone>
+To      <sip:3704020@10.32.255.22:5060>
+Contact <sip:380563720286@10.37.0.36:5060>
+
+2017-09-04 08:56:58.267         call.c  make_call: call 040a. sdp [284] <0x306a0c> 
+
+v=0
+o=mgapp 445144867 1716932827 IN IP4 10.37.0.36
+s=-
+c=IN IP4 10.37.0.36
+t=0 0
+m=audio 20022 RTP/AVP 8 0 18 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:30
+a=sendrecv
+
+2017-09-04 08:56:58.267    dlg0x277e54  Module mod-invite added as dialog usage, data=0x278654
+2017-09-04 08:56:58.267    dlg0x277e54  Session count inc to 2 by mod-invite
+2017-09-04 08:56:58.267    dlg0x277e54  Module mod-100rel added as dialog usage, data=0x3083ac
+2017-09-04 08:56:58.267    dlg0x277e54  100rel module attached
+2017-09-04 08:56:58.267    inv0x277e54  UAC invite session created for dialog dlg0x277e54
+2017-09-04 08:56:58.267       endpoint  Request msg INVITE/cseq=29965 (tdta0x309958) created.
+2017-09-04 08:56:58.268         call.c  make_call: call 040a. call <0x4046d7cc> inv <0x278654> dlg <0x277e54>
+2017-09-04 08:56:58.268    inv0x277e54  Sending Request msg INVITE/cseq=29965 (tdta0x309958)
+2017-09-04 08:56:58.268    dlg0x277e54  Sending Request msg INVITE/cseq=29965 (tdta0x309958)
+2017-09-04 08:56:58.268    tsx0x311214  Transaction created for Request msg INVITE/cseq=29964 (tdta0x309958)
+2017-09-04 08:56:58.268    tsx0x311214  Sending Request msg INVITE/cseq=29964 (tdta0x309958) in state Null
+2017-09-04 08:56:58.268  sip_resolve.c  Target '10.32.255.22:5060' type=Unspecified resolved to '10.32.255.22:5060' type=UDP (UDP transport)
+2017-09-04 08:56:58.268    tsx0x311214  State changed from Null to Calling, event=TX_MSG
+2017-09-04 08:56:58.268    dlg0x277e54  Transaction tsx0x311214 state changed to Calling
+2017-09-04 08:56:58.268         call.c  call_on_state_changed: call 040a. changed to CALLING state with event TSX_STATE
+2017-09-04 08:56:58.268         call.c  call_on_tsx_state_changed: call 040a. tsx 'tsx0x311214', role UAC, method INVITE, event TX_MSG, tsx-state: Calling
+2017-09-04 08:56:58.268         call.c  call_on_tsx_state_changed: call 040a. INVITE UAC. status code [0]
+2017-09-04 08:56:58.268         call.c  call_on_tsx_state_changed: call 040a. Unsupported status code 0 for not-answered call
+2017-09-04 08:56:58.272 sip_endpoint.c  Processing incoming message: Response msg 100/INVITE/cseq=29964 (rdata0x30c32c)
+2017-09-04 08:56:58.273    tsx0x311214  Incoming Response msg 100/INVITE/cseq=29964 (rdata0x30c32c) in state Calling
+2017-09-04 08:56:58.273    tsx0x311214  State changed from Calling to Proceeding, event=RX_MSG
+2017-09-04 08:56:58.273    dlg0x277e54  Received Response msg 100/INVITE/cseq=29964 (rdata0x30c32c)
+2017-09-04 08:56:58.273    dlg0x277e54  Transaction tsx0x311214 state changed to Proceeding
+2017-09-04 08:56:58.273         call.c  call_on_tsx_state_changed: call 040a. tsx 'tsx0x311214', role UAC, method INVITE, event RX_MSG, tsx-state: Proceeding
+2017-09-04 08:56:58.273         call.c  call_check_isup: call 040a. checking for ISUP presence
+2017-09-04 08:56:58.273         call.c  call_check_isup: call 040a. ISUP message not found
+2017-09-04 08:56:58.273         call.c  call_on_tsx_state_changed: call 040a. INVITE UAC. status code [100]
+2017-09-04 08:56:58.273         call.c  call_on_tsx_state_changed: call 040a. Unsupported status code 100 for not-answered call
+2017-09-04 08:56:58.325 sip_endpoint.c !Processing incoming message: Response msg 603/INVITE/cseq=29964 (rdata0x30c32c)
+2017-09-04 08:56:58.325    tsx0x311214  Incoming Response msg 603/INVITE/cseq=29964 (rdata0x30c32c) in state Proceeding
+2017-09-04 08:56:58.325       endpoint  Request msg ACK/cseq=29964 (tdta0x313900) created.
+2017-09-04 08:56:58.325    tsx0x311214  State changed from Proceeding to Completed, event=RX_MSG
+2017-09-04 08:56:58.326    dlg0x277e54  Received Response msg 603/INVITE/cseq=29964 (rdata0x30c32c)
+2017-09-04 08:56:58.326    dlg0x277e54  Transaction tsx0x311214 state changed to Completed
+2017-09-04 08:56:58.326         call.c  call_on_state_changed: call 040a. changed to DISCONNCTD state with event TSX_STATE
+2017-09-04 08:56:58.326         call.c  call_state_disconnected: call 040a. Disconnected. Event type TSX_STATE with response 603
+2017-09-04 08:56:58.326         call.c  call_check_isup: call 040a. checking for ISUP presence
+2017-09-04 08:56:58.326         call.c  call_check_isup: call 040a. ISUP message not found
+2017-09-04 08:56:58.326          ipc.c  pbx-ipc SIP: TX (011)
+2017-09-04 08:56:58.326          ipc.c  		 06 01 02 00 0A 04 10 02 00 5B 02                .........[.
+2017-09-04 08:56:58.326          ipc.c  PBXIPC-SIP. TX. rel-req 
+2017-09-04 08:56:58.326          ipc.c  		# callref 040a
+2017-09-04 08:56:58.326          ipc.c  		# cause 603
+2017-09-04 08:56:58.326    dlg0x277e54  Session count dec to 1 by mod-invite
+2017-09-04 08:56:58.326         call.c  call_on_tsx_state_changed: inv <0x278654>, mod-data <(nil)>
+2017-09-04 08:56:58.326   tdta0x309958  Destroying txdata Request msg INVITE/cseq=29964 (tdta0x309958)
+2017-09-04 08:56:58.327          ipc.c !pbx-ipc SIP: RX (016)
+2017-09-04 08:56:58.327          ipc.c  		 07 01 02 00 0A 04 29 02 00 15 00 10 02 00 5B 02 ......).......[.
+2017-09-04 08:56:58.327          ipc.c  PBXIPC-SIP. RX. rel-cplt 
+2017-09-04 08:56:58.327          ipc.c  		# callref 040a
+2017-09-04 08:56:58.327          ipc.c  		# q850-cause 21
+2017-09-04 08:56:58.327          ipc.c  		# cause 603
+2017-09-04 08:56:58.336      ipc_msg.c !ipc_msg_parse: msg type = rel-cplt [7]
+2017-09-04 08:56:58.336      ipc_msg.c  get_ie: ie [1][callref] size [2]
+2017-09-04 08:56:58.336      ipc_msg.c  get_ie: ie [41][q850-cause] size [2]
+2017-09-04 08:56:58.336      ipc_msg.c  get_ie: ie [16][cause] size [2]
+2017-09-04 08:56:58.336          ipc.c  ipc_process: msg ptr = 0x1eb4f0. type [7]
+2017-09-04 08:56:58.337         call.c  call_release_complete: call 040a. release complete req w/cause 603
+2017-09-04 08:57:00.813          ipc.c !pbx-ipc SIP: RX (005)
+2017-09-04 08:57:00.813          ipc.c  		 15 24 01 00 00                                  .$...
+2017-09-04 08:57:00.813          ipc.c  PBXIPC-SIP. RX. trace 
+2017-09-04 08:57:00.813          ipc.c  		# trace-level [0]
+2017-09-04 08:57:00.821      ipc_msg.c !ipc_msg_parse: msg type = trace [21]
+2017-09-04 08:57:00.821      ipc_msg.c  get_ie: ie [36][trace-level] size [1]
+2017-09-04 08:57:00.821          ipc.c  ipc_process: msg ptr = 0x1eb4f0. type [21]
+2017-09-04 08:57:00.841          app.c  set log_level 0
