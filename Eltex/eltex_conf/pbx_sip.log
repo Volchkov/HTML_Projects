@@ -1,0 +1,21 @@
+2017-08-31 11:39:56.985          app.c !Eltex pa_sip 3.1.6.67. Log started
+2017-08-31 11:39:56.985          app.c  set log_level 5
+2017-08-31 11:39:56.985          ipc.c  pbx-ipc SIP: TX (005)
+2017-08-31 11:39:56.985          ipc.c  		 15 24 01 00 05                                  .$...
+2017-08-31 11:39:56.985          ipc.c  PBXIPC-SIP. TX. trace 
+2017-08-31 11:39:56.985          ipc.c  		# trace-level [5]
+2017-08-31 11:40:01.686 sip_endpoint.c  Processing incoming message: Request msg INVITE/cseq=1 (rdata0x274d44)
+2017-08-31 11:40:01.687 mod_pa_pjsip.c  invite_process: not found trunk for endpoint [10.32.255.22:5060]
+2017-08-31 11:40:01.687        utils.c  fail2ban: BAN suggest: 10.32.255.22:5060 (INVITE failed: trunk not found)
+2017-08-31 11:40:01.687       endpoint  Response msg 403/INVITE/cseq=1 (tdta0x308940) created
+2017-08-31 11:40:01.687  sip_resolve.c  Target '10.32.255.22:5060' type=UDP resolved to '10.32.255.22:5060' type=UDP (UDP transport)
+2017-08-31 11:40:01.688   tdta0x308940  Destroying txdata Response msg 403/INVITE/cseq=1 (tdta0x308940)
+2017-08-31 11:40:01.692 sip_endpoint.c !Processing incoming message: Request msg ACK/cseq=1 (rdata0x274d44)
+2017-08-31 11:40:07.173          ipc.c !pbx-ipc SIP: RX (005)
+2017-08-31 11:40:07.173          ipc.c  		 15 24 01 00 00                                  .$...
+2017-08-31 11:40:07.173          ipc.c  PBXIPC-SIP. RX. trace 
+2017-08-31 11:40:07.173          ipc.c  		# trace-level [0]
+2017-08-31 11:40:07.179      ipc_msg.c !ipc_msg_parse: msg type = trace [21]
+2017-08-31 11:40:07.179      ipc_msg.c  get_ie: ie [36][trace-level] size [1]
+2017-08-31 11:40:07.179          ipc.c  ipc_process: msg ptr = 0x3032f0. type [21]
+2017-08-31 11:40:07.189          app.c  set log_level 0

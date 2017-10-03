@@ -1,0 +1,17 @@
+body 
+{
+  background-color: lightgrey;
+  background-image: url("butterfly.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+	
+}
+
+	
+	h1 {color: #ff0000, font-family: arial, verdana, sans-serif;}
+	h2 {font-family: "Times New Roman", serif; font-style: italic;}
+	p {text-indent: 30px,
+	font: italic bold 30px arial, sans-serif;
+}
+}

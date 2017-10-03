@@ -1,0 +1,2796 @@
+SMG-config:
+  Version: 14
+  LastUpdate:
+    ID: 1
+    Date: 2017-09-15
+    Time: 10:53:20
+  E1:
+    0:
+      ID: 1
+      name: test_pbx
+      off: no
+      line_code: hdb3
+      equalizer: off
+      crc4: off
+      slipInd: on
+      slipTO: 5sec
+      signaling: Q.931-n
+      alarm_ind: on
+      remote_alarm_ind: on
+    1:
+      ID: 2
+      name: pra-2
+      off: no
+      line_code: hdb3
+      equalizer: off
+      crc4: off
+      slipInd: off
+      slipTO: 5sec
+      signaling: Q.931-n
+      alarm_ind: on
+      remote_alarm_ind: on
+  PRI:
+    0:
+      lapd:
+        ID: 1
+        idx: 0
+        T200: 10
+        T203: 100
+        N200: 3
+        TEI: 0
+      q931:
+        trunk: 1
+        accs-cat: 0
+        numplan: 0
+        SendEndOfDial: no
+        SendDialTone: no
+        SendCatAON: no
+        ChanOrder: successive_forward
+        called_plan_id: unknown
+        cat_aon: 1
+        RestartIntfDisable: no
+        RestartChanDisable: no
+        InBand-in-disconnect: off
+        name_transmission: none
+        name_coding: transit
+        route_profile: none
+      channels:
+        0: off
+        16: off
+      chan_trunk: [none, none, none, none, none, none, none, none, none, none, none,
+        none, none, none, none, none, none, none, none, none, none, none, none, none,
+        none, none, none, none, none, none, none, none]
+    1:
+      lapd:
+        ID: 2
+        idx: 1
+        T200: 10
+        T203: 100
+        N200: 3
+        TEI: 0
+      q931:
+        trunk: 2
+        accs-cat: 0
+        numplan: 0
+        SendEndOfDial: no
+        SendDialTone: no
+        SendCatAON: no
+        ChanOrder: successive_forward
+        called_plan_id: unknown
+        cat_aon: 7
+        RestartIntfDisable: no
+        RestartChanDisable: no
+        InBand-in-disconnect: off
+        name_transmission: none
+        name_coding: transit
+        route_profile: none
+      channels:
+        0: off
+        16: off
+      chan_trunk: [none, none, none, none, none, none, none, none, none, none, none,
+        none, none, none, none, none, none, none, none, none, none, none, none, none,
+        none, none, none, none, none, none, none, none]
+  SS7: {}
+  TrunkGroup:
+    0:
+      ID: 2
+      name: SIP
+      disable_out: no
+      disable_in: no
+      local: no
+      inband_messages: no
+      block_cnpn_transit: no
+      inmodclg: none
+      inmodcld: 1
+      outmodclg: 0
+      outmodcld: none
+      outmodredir: none
+      outmodorig: none
+      outmodgennum: none
+      direct_pfx: none
+      rad_profile: none
+      reserved_trunk: none
+      entry_type: SIPT
+      entry_idx: 0
+    1:
+      ID: 3
+      name: TDM
+      disable_out: no
+      disable_in: no
+      local: no
+      inband_messages: no
+      block_cnpn_transit: no
+      inmodclg: none
+      inmodcld: none
+      outmodclg: none
+      outmodcld: none
+      outmodredir: none
+      outmodorig: none
+      outmodgennum: none
+      direct_pfx: 1
+      rad_profile: none
+      reserved_trunk: none
+      entry_type: Q.931
+      entry_idx: 0
+    2:
+      ID: 4
+      name: TDM2
+      disable_out: no
+      disable_in: no
+      local: no
+      inband_messages: no
+      block_cnpn_transit: no
+      inmodclg: none
+      inmodcld: none
+      outmodclg: none
+      outmodcld: none
+      outmodredir: none
+      outmodorig: none
+      outmodgennum: none
+      direct_pfx: 1
+      rad_profile: none
+      reserved_trunk: none
+      entry_type: Q.931
+      entry_idx: 1
+  SyncInfo:
+    ID: 1
+    0:
+      type: stream
+      stream: 1
+      priority: 0
+      off: no
+    1:
+      type: stream
+      stream: 0
+      priority: 0
+      off: no
+    to_up: 5
+    to_down: 5
+  SS7Cat:
+    ID: 1
+    0:
+      aon_cat: 1
+      ss7_cat: 10
+    1:
+      aon_cat: 2
+      ss7_cat: 225
+    2:
+      aon_cat: 3
+      ss7_cat: 228
+    3:
+      aon_cat: 4
+      ss7_cat: 11
+    4:
+      aon_cat: 5
+      ss7_cat: 226
+    5:
+      aon_cat: 6
+      ss7_cat: 15
+    6:
+      aon_cat: 7
+      ss7_cat: 227
+    7:
+      aon_cat: 8
+      ss7_cat: 12
+    8:
+      aon_cat: 9
+      ss7_cat: 229
+    9:
+      aon_cat: 10
+      ss7_cat: 224
+    10:
+      aon_cat: 7
+      ss7_cat: 0
+    11:
+      aon_cat: 7
+      ss7_cat: 240
+    12:
+      aon_cat: 0
+      ss7_cat: 0
+    13:
+      aon_cat: 0
+      ss7_cat: 0
+    14:
+      aon_cat: 0
+      ss7_cat: 0
+    15:
+      aon_cat: 0
+      ss7_cat: 0
+  Prefixes:
+    0:
+      ID: 1
+      name: TDM_3720284
+      type: direction
+      idx: 0
+      accs-cat: 0
+      accs-check: no
+      numplan: 0
+      direction: local
+      cdpn_type: transit
+      cdpn_npi: isdn/telephony
+      getAON: no
+      needAON: no
+      dial_mode: nochange
+      not_dial_ST: no
+      priority: 100
+      Ltimer: 10
+      Stimer: 5
+      Duration: 30
+    1:
+      ID: 2
+      name: SIP
+      type: trunk
+      idx: 0
+      accs-cat: 0
+      accs-check: no
+      numplan: 0
+      direction: local
+      cdpn_type: transit
+      cdpn_npi: isdn/telephony
+      getAON: no
+      needAON: no
+      dial_mode: nochange
+      not_dial_ST: no
+      priority: 100
+      Ltimer: 10
+      Stimer: 5
+      Duration: 30
+    2:
+      ID: 3
+      name: Prefix#02
+      type: trunk
+      idx: 255
+      accs-cat: 0
+      accs-check: no
+      numplan: 1
+      direction: local
+      cdpn_type: transit
+      cdpn_npi: isdn/telephony
+      getAON: no
+      needAON: no
+      dial_mode: nochange
+      not_dial_ST: no
+      priority: 100
+      Ltimer: 10
+      Stimer: 5
+      Duration: 30
+    3:
+      ID: 4
+      name: TDM_3757986
+      type: direction
+      idx: 0
+      accs-cat: 0
+      accs-check: no
+      numplan: 0
+      direction: local
+      cdpn_type: transit
+      cdpn_npi: isdn/telephony
+      getAON: no
+      needAON: no
+      dial_mode: nochange
+      not_dial_ST: no
+      priority: 100
+      Ltimer: 10
+      Stimer: 5
+      Duration: 30
+  PfxMask:
+    0:
+      ID: 1
+      mask: (3757xxx)
+      prefix: 3
+      type: called
+      Stimer: 5
+      Ltimer: 10
+      Duration: 30
+    1:
+      ID: 2
+      mask: (56372xxxx)
+      prefix: 0
+      type: called
+      Stimer: 5
+      Ltimer: 10
+      Duration: 30
+  SIPTinterface:
+    0:
+      name: SIP-interface00
+      ID: 1
+      mode: SIP
+      trunk: 0
+      accs-cat: 0
+      numplan: 0
+      auth_name: 
+      auth_pass: 
+      username: 
+      sipdomain: 
+      number: 
+      route_mode: RURI
+      regexpire: 1800
+      cgpn_replace: no
+      trunkregister: none
+      regdelay: 1000
+      ip: 10.32.255.22
+      public_ip: 10.37.0.36
+      hostname: 10.32.255.22
+      netiface_sig: 1
+      netiface_rtp: 1
+      command_line: 
+      port: 5060
+      srcport: 5060
+      rtpmode: default
+      stunuse: no
+      stunip: 0.0.0.0
+      stunport: 3478
+      stunperiod: 60
+      sipcause_profile: 255
+      srcPort_incoming: yes
+      trusted_network: yes
+      route_profile: none
+      codecs:
+        0:
+          codec: G711.A
+          ptype: 8
+          pte: 30
+        1:
+          codec: G711.U
+          ptype: 0
+          pte: 30
+        2:
+          codec: G729
+          ptype: 18
+          pte: 30
+      max_active: 0
+      vad: no
+      ecan: off
+      gain_rx: 0
+      gain_tx: 0
+      dscp_rtp: 0
+      dscp_sig: 0
+      rtcp_period: 0
+      rtcp_ctrl: 0
+      dtmf_type: rfc2833
+      dtmf_pt: 101
+      dtmf_pt_equal: off
+      dtmf_ct: 0
+      flash_proc: off
+      cci: off
+      clear_chan: off
+      ts_clear_chan: off
+      FAXdetect: both
+      FAXmode: T.38
+      T38MaxBitRate: no_limit
+      T38RateManagment: transferredTCF
+      T38FillBitRemoval: off
+      T38Redundancy: 0
+      T38Pte: 30
+      VBDenable: no
+      VBDcodec: G711.A
+      VBDpt: 0
+      Jitter_mode: adaptive
+      Jitter_min: 0
+      Jitter_init: 0
+      Jitter_max: 200
+      Jitter_vbd: 0
+      Jitter_delete_threshold: 500
+      Jitter_adopt_period: 10000
+      Jitter_delete_mode: soft
+      Jitter_adjust_mode: non-immediately
+      RTPcontrol: 0
+      RTPsilence: 0
+      SessionExpires: 0
+      MinSE: 0
+      Refresher: uac
+      Redirection: disable
+      REFER: disable
+      Rport: enable
+      Reliable1xx: off
+      Remote_name_in_contact: no
+      Category: none
+      Options: disable
+      PeriodOptions: 0
+      AlarmInd: no
+      SourceVerify: no
+      Inband183: no
+      RedirServer: no
+      EarlyRTP: no
+      SDPin18x: no
+      T38transit: no
+    1:
+      name: SIP-interface01
+      ID: 2
+      mode: SIP
+      trunk: none
+      accs-cat: 0
+      numplan: 0
+      auth_name: 
+      auth_pass: 
+      username: 
+      sipdomain: 
+      number: 
+      route_mode: RURI
+      regexpire: 1800
+      cgpn_replace: no
+      trunkregister: none
+      regdelay: 1000
+      ip: 10.32.255.22
+      public_ip: 10.37.0.42
+      hostname: 10.32.255.22
+      netiface_sig: 3
+      netiface_rtp: 3
+      command_line: 
+      port: 5060
+      srcport: 5060
+      rtpmode: default
+      stunuse: no
+      stunip: 0.0.0.0
+      stunport: 3478
+      stunperiod: 60
+      sipcause_profile: 255
+      srcPort_incoming: yes
+      trusted_network: yes
+      route_profile: none
+      codecs:
+        0:
+          codec: G711.A
+          ptype: 8
+          pte: 30
+        1:
+          codec: G711.U
+          ptype: 0
+          pte: 30
+      max_active: 0
+      vad: no
+      ecan: off
+      gain_rx: 0
+      gain_tx: 0
+      dscp_rtp: 0
+      dscp_sig: 0
+      rtcp_period: 0
+      rtcp_ctrl: 0
+      dtmf_type: rfc2833
+      dtmf_pt: 101
+      dtmf_pt_equal: off
+      dtmf_ct: 0
+      flash_proc: off
+      cci: off
+      clear_chan: off
+      ts_clear_chan: off
+      FAXdetect: none
+      FAXmode: none
+      T38MaxBitRate: no_limit
+      T38RateManagment: localTCF
+      T38FillBitRemoval: off
+      T38Redundancy: 0
+      T38Pte: 30
+      VBDenable: no
+      VBDcodec: G711.A
+      VBDpt: 0
+      Jitter_mode: adaptive
+      Jitter_min: 0
+      Jitter_init: 0
+      Jitter_max: 200
+      Jitter_vbd: 0
+      Jitter_delete_threshold: 500
+      Jitter_adopt_period: 10000
+      Jitter_delete_mode: soft
+      Jitter_adjust_mode: non-immediately
+      RTPcontrol: 0
+      RTPsilence: 0
+      SessionExpires: 0
+      MinSE: 0
+      Refresher: uac
+      Redirection: disable
+      REFER: disable
+      Rport: enable
+      Reliable1xx: off
+      Remote_name_in_contact: no
+      Category: none
+      Options: disable
+      PeriodOptions: 0
+      AlarmInd: yes
+      SourceVerify: no
+      Inband183: no
+      RedirServer: no
+      EarlyRTP: no
+      SDPin18x: no
+      T38transit: no
+  SiptConfig:
+    ID: 1
+    port: 5060
+    transport: UDP-only
+    droute_profile: 0
+    T1: 5
+    T2: 40
+    T4: 50
+    CauseCodesKZ: off
+    Interworking: no
+    ignore_RURI: no
+    DBsave: no
+    DBperiod: 1hour
+  Ports:
+    ID: 1
+    start: 20000
+    range: 10000
+  UA-link: {}
+  Syslog:
+    ID: 1
+    ipaddr: 0.0.0.0
+    syslog_port: 514
+    alarm: 0
+    calls: 0
+    isup: 0
+    sipt: 0
+    q931: 0
+    rtp: 0
+    msp: 0
+    radius: 0
+    h323: 0
+  COStable:
+    0:
+      ID: 1
+      name: AccessCat#0
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    1:
+      ID: 2
+      name: AccessCat#1
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    2:
+      ID: 3
+      name: AccessCat#2
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    3:
+      ID: 4
+      name: AccessCat#3
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    4:
+      ID: 5
+      name: AccessCat#4
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    5:
+      ID: 6
+      name: AccessCat#5
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    6:
+      ID: 7
+      name: AccessCat#6
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    7:
+      ID: 8
+      name: AccessCat#7
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    8:
+      ID: 9
+      name: AccessCat#8
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    9:
+      ID: 10
+      name: AccessCat#9
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    10:
+      ID: 11
+      name: AccessCat#10
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    11:
+      ID: 12
+      name: AccessCat#11
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    12:
+      ID: 13
+      name: AccessCat#12
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    13:
+      ID: 14
+      name: AccessCat#13
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    14:
+      ID: 15
+      name: AccessCat#14
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    15:
+      ID: 16
+      name: AccessCat#15
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    16:
+      ID: 17
+      name: AccessCat#16
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    17:
+      ID: 18
+      name: AccessCat#17
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    18:
+      ID: 19
+      name: AccessCat#18
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    19:
+      ID: 20
+      name: AccessCat#19
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    20:
+      ID: 21
+      name: AccessCat#20
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    21:
+      ID: 22
+      name: AccessCat#21
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    22:
+      ID: 23
+      name: AccessCat#22
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    23:
+      ID: 24
+      name: AccessCat#23
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    24:
+      ID: 25
+      name: AccessCat#24
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    25:
+      ID: 26
+      name: AccessCat#25
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    26:
+      ID: 27
+      name: AccessCat#26
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    27:
+      ID: 28
+      name: AccessCat#27
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    28:
+      ID: 29
+      name: AccessCat#28
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    29:
+      ID: 30
+      name: AccessCat#29
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    30:
+      ID: 31
+      name: AccessCat#30
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    31:
+      ID: 32
+      name: AccessCat#31
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      access:
+        0: yes
+        1: yes
+        2: yes
+        3: yes
+        4: yes
+        5: yes
+        6: yes
+        7: yes
+        8: yes
+        9: yes
+        10: yes
+        11: yes
+        12: yes
+        13: yes
+        14: yes
+        15: yes
+        16: no
+        17: no
+        18: no
+        19: no
+        20: no
+        21: no
+        22: no
+        23: no
+        24: no
+        25: no
+        26: no
+        27: no
+        28: no
+        29: no
+        30: no
+        31: no
+    32:
+      ID: 33
+      name: AccessCat#32
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    33:
+      ID: 34
+      name: AccessCat#33
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    34:
+      ID: 35
+      name: AccessCat#34
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    35:
+      ID: 36
+      name: AccessCat#35
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    36:
+      ID: 37
+      name: AccessCat#36
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    37:
+      ID: 38
+      name: AccessCat#37
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    38:
+      ID: 39
+      name: AccessCat#38
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    39:
+      ID: 40
+      name: AccessCat#39
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    40:
+      ID: 41
+      name: AccessCat#40
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    41:
+      ID: 42
+      name: AccessCat#41
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    42:
+      ID: 43
+      name: AccessCat#42
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    43:
+      ID: 44
+      name: AccessCat#43
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    44:
+      ID: 45
+      name: AccessCat#44
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    45:
+      ID: 46
+      name: AccessCat#45
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    46:
+      ID: 47
+      name: AccessCat#46
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    47:
+      ID: 48
+      name: AccessCat#47
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    48:
+      ID: 49
+      name: AccessCat#48
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    49:
+      ID: 50
+      name: AccessCat#49
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    50:
+      ID: 51
+      name: AccessCat#50
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    51:
+      ID: 52
+      name: AccessCat#51
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    52:
+      ID: 53
+      name: AccessCat#52
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    53:
+      ID: 54
+      name: AccessCat#53
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    54:
+      ID: 55
+      name: AccessCat#54
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    55:
+      ID: 56
+      name: AccessCat#55
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    56:
+      ID: 57
+      name: AccessCat#56
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    57:
+      ID: 58
+      name: AccessCat#57
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    58:
+      ID: 59
+      name: AccessCat#58
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    59:
+      ID: 60
+      name: AccessCat#59
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    60:
+      ID: 61
+      name: AccessCat#60
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    61:
+      ID: 62
+      name: AccessCat#61
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    62:
+      ID: 63
+      name: AccessCat#62
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    63:
+      ID: 64
+      name: AccessCat#63
+      access_list: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  TrunkDirection:
+    0:
+      name: 'Direction #0'
+      mode: successive_forward
+      local: no
+      members: [1, 2]
+  Numplan:
+    0:
+      ID: 1
+      name: eltex
+      domain: 
+    1:
+      ID: 2
+      name: NumberPlan#1
+      domain: 
+    2:
+      ID: 3
+      name: NumberPlan#2
+      domain: 
+    3:
+      ID: 4
+      name: NumberPlan#3
+      domain: 
+    4:
+      ID: 5
+      name: NumberPlan#4
+      domain: 
+    5:
+      ID: 6
+      name: NumberPlan#5
+      domain: 
+    6:
+      ID: 7
+      name: NumberPlan#6
+      domain: 
+    7:
+      ID: 8
+      name: NumberPlan#7
+      domain: 
+    8:
+      ID: 9
+      name: NumberPlan#8
+      domain: 
+    9:
+      ID: 10
+      name: NumberPlan#9
+      domain: 
+    10:
+      ID: 11
+      name: NumberPlan#10
+      domain: 
+    11:
+      ID: 12
+      name: NumberPlan#11
+      domain: 
+    12:
+      ID: 13
+      name: NumberPlan#12
+      domain: 
+    13:
+      ID: 14
+      name: NumberPlan#13
+      domain: 
+    14:
+      ID: 15
+      name: NumberPlan#14
+      domain: 
+    15:
+      ID: 16
+      name: NumberPlan#15
+      domain: 
+  PbxProfile:
+    0:
+      ID: 1
+      name: PBXprofile#0
+      prefix: 
+      rad_profile: none
+      direct_pfx: none
+      inmodclg: none
+      inmodcld: none
+      route_profile: none
+      inband_messages: no
+      block_cnpn_transit: no
+      redir_oos_timeout: 10
+      redir_noreply_timeout: 10
+      first_digit_timeout: 15
+      next_digit_timeout: 5
+      busy_signal_timeout: 60
+  CDRinfo:
+    ID: 1
+    cdr_enabled: no
+    cdr_unsuccess: no
+    cdr_local: no
+    cdr_ftp: no
+    cdr_ftp2: no
+    cdr_header: no
+    cdr_emptysave: no
+    cdr_inmodclg: none
+    cdr_inmodcld: none
+    cdr_outmodclg: none
+    cdr_outmodcld: none
+    cdr_inmodredir: none
+    cdr_inmodorig: none
+    cdr_outmodredir: none
+    cdr_outmodorig: none
+    cdr_day: 0
+    cdr_hour: 1
+    cdr_min: 0
+    cdr_signature: 
+    cdr_localpath: 
+    cdr_ftpserver: 
+    cdr_ftpport: 21
+    cdr_ftppath: 
+    cdr_ftplogin: 
+    cdr_ftppasswd: 
+    cdr_ftp2server: 
+    cdr_ftp2port: 21
+    cdr_ftp2path: 
+    cdr_ftp2login: 
+    cdr_ftp2passwd: 
+    cdr_keep_day: 0
+    cdr_keep_hour: 0
+    cdr_keep_min: 0
+    cdr_save_redir: no
+    cdr_mark_redir: no
+    cdr_mark_pickup: no
+    cdr_save_category: no
+  ModTable:
+    0:
+      ID: 1
+      name: int_to_sip
+      Stimer: 3
+      Ltimer: 7
+    1:
+      ID: 3
+      name: to_TDM
+      Stimer: 3
+      Ltimer: 7
+  Modifiers:
+    0:
+      ID: 1
+      table: 0
+      numplan: no_change
+      accs-cat: no_change
+      cld-rule: $
+      cld-type: no_change
+      cld-numplan: no_change
+      clg-rule: ..+38056xxxxxx$
+      clg-type: no_change
+      clg-numplan: no_change
+      clg-pres: no_change
+      clg-scrn: no_change
+      clg-aoncat: no_change
+      mask: (5637xxxxx)
+      num-type: any
+      num-cat: any
+    1:
+      ID: 3
+      table: 1
+      numplan: no_change
+      accs-cat: no_change
+      cld-rule: '.....$'
+      cld-type: subscriber
+      cld-numplan: no_change
+      clg-rule: $
+      clg-type: no_change
+      clg-numplan: no_change
+      clg-pres: no_change
+      clg-scrn: no_change
+      clg-aoncat: no_change
+      mask: (38056375xxxx)
+      num-type: any
+      num-cat: any
+    2:
+      ID: 5
+      table: 1
+      numplan: no_change
+      accs-cat: no_change
+      cld-rule: '...$'
+      cld-type: no_change
+      cld-numplan: no_change
+      clg-rule: $
+      clg-type: no_change
+      clg-numplan: no_change
+      clg-pres: no_change
+      clg-scrn: no_change
+      clg-aoncat: no_change
+      mask: (38056372xxxx)
+      num-type: any
+      num-cat: any
+  q931Timers:
+    ID: 1
+    t301: 180
+    t302: 15
+    t303: 4
+    t304: 20
+    t305: 30
+    t306: 30
+    t307: 180
+    t308: 4
+    t309: 90
+    t310: 10
+    t312: 6
+    t313: 4
+    t314: 4
+    t316: 120
+    t317: 120
+    t320: 30
+    t321: 30
+    t322: 4
+  H323Config:
+    ID: 1
+    H323ID: SMG1016M
+    ifaceID: 1
+    port: 1720
+    gk_port: 1719
+    gk_ip: 0.0.0.0
+    gk_ttl: 300
+    gk_keepalive: 20
+    gk_use: off
+    gk_discover: off
+  RADIUS_SERVER:
+    ID: 1
+    auth:
+      0:
+        authip: 127.0.0.1
+        authport: 1812
+        authsecret: dummy
+    acct:
+      0:
+        acctip: 127.0.0.1
+        acctport: 1813
+        acctsecret: dummy
+    ifaceID: 1
+    radius_timeout: 7
+    radius_retries: 3
+    radius_deadtime: 10
+    auth_user: no
+  Mirroring:
+    ID: 1
+    src_in_port0: off
+    src_out_port0: off
+    src_in_port1: off
+    src_out_port1: off
+    src_in_port2: off
+    src_out_port2: off
+    src_in_port4: off
+    src_out_port4: off
+    src_in_port6: off
+    src_out_port6: off
+    src_in_port7: off
+    src_out_port7: off
+    dst_in: none
+    dst_out: none
+  SwitchPorts:
+    0:
+      ID: 1
+      portenable: on
+      vlan_id: 0
+      VLANenable: off
+      override: off
+      egress: unmodified
+      ieee: fallback
+      Output:
+        output_port0: no
+        output_port1: no
+        output_port2: no
+        output_port4: yes
+        output_port6: no
+        output_port7: no
+      LACP: off
+      backup_port: empty
+      preemption: off
+      port_mode: 0
+    1:
+      ID: 2
+      portenable: on
+      vlan_id: 0
+      VLANenable: off
+      override: off
+      egress: unmodified
+      ieee: fallback
+      Output:
+        output_port0: no
+        output_port1: no
+        output_port2: no
+        output_port4: yes
+        output_port6: no
+        output_port7: no
+      LACP: off
+      backup_port: empty
+      preemption: off
+      port_mode: 0
+    2:
+      ID: 3
+      portenable: on
+      vlan_id: 0
+      VLANenable: off
+      override: off
+      egress: unmodified
+      ieee: fallback
+      Output:
+        output_port0: no
+        output_port1: no
+        output_port2: no
+        output_port4: yes
+        output_port6: no
+        output_port7: no
+      LACP: off
+      backup_port: empty
+      preemption: off
+      port_mode: 0
+    4:
+      ID: 5
+      portenable: on
+      vlan_id: 0
+      VLANenable: off
+      override: off
+      egress: unmodified
+      ieee: fallback
+      Output:
+        output_port0: yes
+        output_port1: yes
+        output_port2: yes
+        output_port4: no
+        output_port6: yes
+        output_port7: yes
+      LACP: off
+      backup_port: empty
+      preemption: off
+      port_mode: 0
+    6:
+      ID: 7
+      portenable: on
+      vlan_id: 0
+      VLANenable: off
+      override: off
+      egress: unmodified
+      ieee: fallback
+      Output:
+        output_port0: no
+        output_port1: no
+        output_port2: no
+        output_port4: yes
+        output_port6: no
+        output_port7: no
+      LACP: off
+      backup_port: empty
+      preemption: off
+      port_mode: 0
+    7:
+      ID: 8
+      portenable: on
+      vlan_id: 0
+      VLANenable: off
+      override: off
+      egress: unmodified
+      ieee: fallback
+      Output:
+        output_port0: no
+        output_port1: no
+        output_port2: no
+        output_port4: yes
+        output_port6: no
+        output_port7: no
+      LACP: off
+      backup_port: empty
+      preemption: off
+      port_mode: 0
+  QoS:
+    0:
+      ID: 1
+      default priority: 0
+      QoS_mode: DSCP_only
+      remapping:
+        0: 0
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+        6: 6
+        7: 7
+      ingress_mode: off
+      ingress_rate_prio: 0
+      ingress_rate_prio1: previous
+      ingress_rate_prio2: previous
+      ingress_rate_prio3: previous
+      egress_limit: off
+      egress_rate_limit: 0
+    1:
+      ID: 2
+      default priority: 0
+      QoS_mode: DSCP_only
+      remapping:
+        0: 0
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+        6: 6
+        7: 7
+      ingress_mode: off
+      ingress_rate_prio: 0
+      ingress_rate_prio1: previous
+      ingress_rate_prio2: previous
+      ingress_rate_prio3: previous
+      egress_limit: off
+      egress_rate_limit: 0
+    2:
+      ID: 3
+      default priority: 0
+      QoS_mode: DSCP_only
+      remapping:
+        0: 0
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+        6: 6
+        7: 7
+      ingress_mode: off
+      ingress_rate_prio: 0
+      ingress_rate_prio1: previous
+      ingress_rate_prio2: previous
+      ingress_rate_prio3: previous
+      egress_limit: off
+      egress_rate_limit: 0
+    4:
+      ID: 5
+      default priority: 0
+      QoS_mode: DSCP_only
+      remapping:
+        0: 0
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+        6: 6
+        7: 7
+      ingress_mode: off
+      ingress_rate_prio: 0
+      ingress_rate_prio1: previous
+      ingress_rate_prio2: previous
+      ingress_rate_prio3: previous
+      egress_limit: off
+      egress_rate_limit: 0
+    6:
+      ID: 7
+      default priority: 0
+      QoS_mode: DSCP_only
+      remapping:
+        0: 0
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+        6: 6
+        7: 7
+      ingress_mode: off
+      ingress_rate_prio: 0
+      ingress_rate_prio1: previous
+      ingress_rate_prio2: previous
+      ingress_rate_prio3: previous
+      egress_limit: off
+      egress_rate_limit: 0
+    7:
+      ID: 8
+      default priority: 0
+      QoS_mode: DSCP_only
+      remapping:
+        0: 0
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+        6: 6
+        7: 7
+      ingress_mode: off
+      ingress_rate_prio: 0
+      ingress_rate_prio1: previous
+      ingress_rate_prio2: previous
+      ingress_rate_prio3: previous
+      egress_limit: off
+      egress_rate_limit: 0
+  QoS priorities mapping:
+    ID: 1
+    remapping: [1, 0, 0, 1, 2, 2, 3, 3]
+  QoS diffserv priorities mapping:
+    ID: 1
+    diffserv: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
+      1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3,
+      3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  Systemlog_func:
+    ID: 1
+    ip: 0.0.0.0
+    ip_log: 0.0.0.0
+    port: 514
+    port_log: 514
+    mode: 0
+    type: local
+    enable: no
+  DHCPd:
+    ID: 1
+    start: 0.0.0.0
+    end: 0.0.0.0
+    netmask: 0.0.0.0
+    dnsaddr0: 0.0.0.0
+    dnsaddr1: 0.0.0.0
+    dnsaddr2: 0.0.0.0
+    gwaddr: 0.0.0.0
+    winsaddr: 0.0.0.0
+    domain: 
+    maxleases: 254
+    min_lease: 3600
+    max_lease: 86400
+    declinetime: 3600
+    conflicttime: 3600
+    offertime: 60
+    savetime: 7200
+    interface: 0
+  NetworkSettings:
+    0:
+      ID: 1
+      Hostname: smg2
+      Iface_GW: 1
+      Gateway: 10.37.0.1
+      NTP_server: 
+      DNS0: 0.0.0.0
+      DNS1: 0.0.0.0
+      NTP_period: 240
+      Web_port: 80
+      Telnet_port: 23
+      SSH_port: 22
+      Use_server_DHCP: no
+      Use_NTP: no
+  NetIface:
+    0:
+      ID: 1
+      Label: SIP
+      FW_profile: 0
+      IPv4: yes
+      Web: yes
+      SSH: yes
+      Telnet: yes
+      SNMP: yes
+      Signaling: yes
+      RTP: yes
+      Radius: yes
+      H323: yes
+      Type: untagged
+      IPv4_addr: 10.37.0.36
+      IPv4_netmask: 255.255.192.0
+      IPv4_broadcast: 0.0.0.0
+      IPv4_gateway: 10.37.0.1
+      DHCP: no
+      DHCP_no_gw: no
+      DHCP_DNS: no
+      DHCP_NTP: no
+    1:
+      ID: 2
+      Label: local web
+      FW_profile: 0
+      IPv4: yes
+      Web: yes
+      SSH: yes
+      Telnet: yes
+      SNMP: yes
+      Signaling: yes
+      RTP: yes
+      Radius: yes
+      H323: no
+      Type: untagged
+      IPv4_addr: 192.168.1.2
+      IPv4_netmask: 255.255.255.0
+      IPv4_broadcast: 0.0.0.0
+      IPv4_gateway: 0.0.0.0
+      Alias: 1
+      DHCP: no
+      DHCP_no_gw: no
+      DHCP_DNS: no
+      DHCP_NTP: no
+    2:
+      ID: 3
+      Label: SIP_reserve
+      FW_profile: 0
+      IPv4: yes
+      Web: yes
+      SSH: yes
+      Telnet: yes
+      SNMP: yes
+      Signaling: yes
+      RTP: yes
+      Radius: yes
+      H323: no
+      Type: untagged
+      IPv4_addr: 10.37.0.42
+      IPv4_netmask: 255.255.192.0
+      IPv4_broadcast: 0.0.0.0
+      IPv4_gateway: 0.0.0.0
+      Alias: 2
+      DHCP: no
+      DHCP_no_gw: no
+      DHCP_DNS: no
+      DHCP_NTP: no
+  SNMP CONFIGURATION:
+    ID: 1
+    sysname: 
+    syslocation: 
+    syscontact: 
+    rocommunity: 
+    rwcommunity: 
+    rwuser: admin
+  SSHGUARD_INFO:
+    ID: 1
+    sshg_enable: no
+    sshg_time_block: 600
+    sshg_tries_block: 30
+  HostPing:
+    ID: 1
+    hostping_enabled: no
+    hostping_period: 10
+    hostping_tries: 3
+    hostping_list: [10.37.0.1]
+  DEVICE_INFO:
+    ID: 1
+    trace_path: default
+    alarm_path: off
+    device_name: SMG2
+    plancount: 1
+    power_alarm: 0
+    fan_alarm: 1
+    cpu_alarm: 1
+    ram_alarm: 1
+    rom_alarm: 1
+    web_proto: 0
+    record_path: off
+    record_dirname: 
+    record_file_per_dir: 200
+    record_keep_day: 30
+    record_keep_hour: 0
+    record_full_disk_act: stop_recording
+  FtpdConfig:
+    ID: 1
+    enable: 0
+    port: 21
+    interfaceID: 0
+    timeoutLogin: 120
+    timeoutIdle: 180
+    timeoutSession: 600
+  FtpdUsers:
+    0:
+      ID: 1
+      name: ftpuser
+      pass: dwssapptf
+      accessCdr: 2
+      accessLog: 2
+      accessMnt: 2
+  SS7Timers:
+    0:
+      ID: 1
+      MTP2_T1: 400
+      MTP2_T2: 110
+      MTP2_T3: 12
+      MTP2_T4_N: 80
+      MTP2_T4_E: 6
+      MTP2_T5: 80
+      MTP2_T6: 45
+      MTP2_T7_N: 20
+      MTP2_T7_PCR: 20
+      MTP3_T1: 12
+      MTP3_T2: 15
+      MTP3_T3: 12
+      MTP3_T4: 8
+      MTP3_T5: 12
+      MTP3_T6: 12
+      MTP3_T7: 20
+      MTP3_T8: 12
+      MTP3_T9: 0
+      MTP3_T10: 600
+      MTP3_T11: 900
+      MTP3_T12: 10
+      MTP3_T13: 10
+      MTP3_T14: 25
+      MTP3_T15: 30
+      MTP3_T16: 20
+      MTP3_T17: 10
+      MTP3_T18: 30000
+      MTP3_T19: 670
+      MTP3_T20: 590
+      MTP3_T21: 630
+      MTP3_T22: 1800
+      MTP3_T23: 1850
+      MTP3_T24: 5
+      ISUP_T1: 500
+      ISUP_T2: 1800
+      ISUP_T3: 1200
+      ISUP_T4: 9000
+      ISUP_T5: 6000
+      ISUP_T6: 300
+      ISUP_T7: 300
+      ISUP_T8: 100
+      ISUP_T9: 1800
+      ISUP_T10: 60
+      ISUP_T11: 200
+      ISUP_T12: 500
+      ISUP_T13: 6000
+      ISUP_T14: 500
+      ISUP_T15: 6000
+      ISUP_T16: 500
+      ISUP_T17: 6000
+      ISUP_T18: 500
+      ISUP_T19: 6000
+      ISUP_T20: 500
+      ISUP_T21: 6000
+      ISUP_T22: 500
+      ISUP_T23: 6000
+      ISUP_T24: 10
+      ISUP_T25: 50
+      ISUP_T26: 600
+      ISUP_T27: 2400
+      ISUP_T28: 100
+      ISUP_T29: 6
+      ISUP_T30: 100
+      ISUP_T31: 30000
+      ISUP_T32: 50
+      ISUP_T33: 150
+      ISUP_T34: 40
+      ISUP_T35: 200
+      ISUP_T36: 150
+      ISUP_T37: 40
+      ISUP_T38: 30000
+      ISUP_T39: 150
+  L2TP SERVER:
+    ID: 1
+    ifaceID: 0
+    enable: no
+    FW_profile: 0
+    Web: no
+    SSH: no
+    Telnet: no
+    SNMP: no
+    Signaling: no
+    RTP: no
+    Radius: no
+    H323: no
+    hostname: 
+    dns: 
+    ip_range_left: 
+    ip_range_right: 
+    ip_local: 
+    port: 1701
+    exclusive: no
+    length_bit: yes
+    hidden_bit: no
+    rx_bps: 0
+    tx_bps: 0
+  VPN SERVER:
+    ID: 1
+    ifaceID: 0
+    enable: no
+    FW_profile: 0
+    Web: no
+    SSH: no
+    Telnet: no
+    SNMP: no
+    Signaling: no
+    RTP: no
+    Radius: no
+    H323: no
+    localip: 0.0.0.0
+    firstip: 0.0.0.0
+    lastip: 0.0.0.0
+    dns: 0.0.0.0
+    count: 0
+    mppe: no
+  USER_VOICE_FILES:
+    ID: 1
+    trunk_busy: no
+    trunk_error: no
+    number_fail: no
+    access_temp: no
+    service_restrict: no
+    access_restrict: no
+    access_unpaid: no
+    user_unallocated: no
+    user_change: no
+    music_on_hold: no
+    number_changed: no
+  AutoUpdate:
+    ID: 1
+    iface_ID: 0
+    enable: no
+    protocol: tftp
+    authentication: no
+    update_config: no
+    update_firmware: no
+    auth_name: 
+    auth_pass: 
+    static_server: update.local
+    config_name: a8.f9.4b.8a.6a.17.cfg
+    firmware_name: SMG2.manifest
+    config_updating_period: 30
+    firmware_updating_period: 30

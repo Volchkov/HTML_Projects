@@ -3,7 +3,11 @@ body {
 	  background-image: url(clouds.jpg);
 	 }
 
+<<<<<<< HEAD
 	  h1 {background-color: green;}
+=======
+	  h1 {background-color:none;}
+>>>>>>> 24ff13223f15c6f61cbb52c3df3941cc9cfb8b1f
 	  h1 {font-family: arial, verdana, sans-serif;}
 	  h2 {font-family: "Times New Roman", serif; font-style: italic;}
 	  h1 {font-size: 30px;}
@@ -13,6 +17,7 @@ body {
 	
 
 
+<<<<<<< HEAD
       .navbar {
         margin: 0;
         padding: 0;
@@ -31,8 +36,36 @@ body {
         font-weight: bold;
         border-left: 5px solid #33ADFF;
         display: block;
+=======
+ .navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border: 2px solid #0066FF;
+        border-radius: 20px 5px;
+        width: 550px;
+        text-align: center;
+        background-color: #33ADFF;
+      }
+      .navbar li { display: inline; }
+      .navbar a {
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+      }
+      .navbar a:hover {
+        border-radius: 20px 5px;
+        background-color: #0066FF;
+>>>>>>> 24ff13223f15c6f61cbb52c3df3941cc9cfb8b1f
       }
 
 
 
+<<<<<<< HEAD
 	  }
+=======
+	  
+>>>>>>> 24ff13223f15c6f61cbb52c3df3941cc9cfb8b1f
