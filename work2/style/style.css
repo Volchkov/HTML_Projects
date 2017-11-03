@@ -1,0 +1,419 @@
+body {
+	  margin: 0;
+      padding: 5;
+	  background-image: url("../images/white-wall.jpg");
+	 }
+
+
+	/*  h1 {font-family: arial, verdana, sans-serif;}
+	  h2 {font-family: "Times New Roman", serif; font-style: italic;}
+	  h1 {font-size: 30px;}
+	  h2 {font-size: 12pt;}
+      h3 {color: blue; font-style: italic;}
+	  h4 {background-color: red, font-size: 120%;}
+	  p {font-size: 1em;}
+	
+      hr {align="center"; color=#8A0808; size=1; width=100%;}
+      p {font-size: 1em;}
+      */
+     
+/*Шапка*/
+.header-column {    
+    background-color: #33ADFF;
+    margin-bottom: 20px;  
+    border-radius: 20px 5px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #0066FF;
+    color:white; 
+
+}
+
+.header-column h5{
+ color: white ;font:15px Tahoma;
+}
+.header-column h1{
+ color: white ;font:30px Tahoma;
+}
+
+/* Меню - верх*/
+.navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border: 2px solid #0066FF;
+        border-radius: 20px 5px;
+        height: 70px;
+        text-align: right;
+        background-color:#FFFF00;
+      }
+      .navbar li { display: inline; }
+      .navbar a {
+        color: #D00909;
+        padding: 25px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+      }
+      .navbar a:hover {
+        border-radius: 20px 5px;
+        background-color:#95FB2A;
+      }
+
+/*Основной блок*/
+.block {
+    margin-bottom: 5px;
+    padding: 10px;
+    color: #cc0000;
+}
+
+/* Топ панель */
+
+.topbar {
+    min-height:0px;
+    padding: 5px;
+    margin-right:0px;
+
+}
+
+.top-menu{
+    margin: 0;
+    padding:0px;
+    list-style:none;
+    
+}
+
+.top-menu li {
+     display:inline-block;
+     margin:5px
+     white-space:nowrap;
+}
+
+.top-menu a {
+   
+   display: inline-block;
+    padding: 8px 14px;
+    color: #0088cc;
+    border:2px solid #e5e5e5;
+    border-radius: 20px 20px;
+    margin-bottom:-1px;
+    text-decoration:none;
+    font-weight: bold;
+    width:150px;
+    text-align: center;
+  
+}
+
+.top-menu h1 {
+     font-family: "Times New Roman",
+     serif;
+     font-style: italic;
+    color: #EE2D47;
+    font-size: 20px;
+}
+
+/* Ссылка в меню внутри элемента с классом .active */
+
+.top-menu .active a {
+    color: white;
+    background: #0088cc;
+    border-radius: 5px 5px;
+    border: -2px solid #0066FF;
+}
+
+.top-menu a:hover {
+    background: #81DAF5;
+}
+
+/* Боковая панель - левая */
+
+.sidebar {
+    float: left;
+    width: 200px;
+    min-height: 400px;
+    padding: 10px;
+    margin-right:5px;
+    border:2px solid #DBA901;
+    background: #F2F5A9;
+    border-radius: 10px 10px;
+}
+
+.main-menu{
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    
+    }
+.main-menu li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-menu a {
+   display: inline-block;
+    padding: 8px 14px;
+    color: #0088cc;
+    border:2px solid #e5e5e5;
+    border-radius: 5px 5px;
+    margin-bottom:-1px;
+    text-decoration:none;
+    font-weight: bold;
+    width:150px;
+    text-align: center;
+
+}
+
+.main-menu h2 {
+    color: #D00909;
+    text-decoration:none;
+    font-weight: bold;
+    width:150px;
+    text-align: center;
+
+}
+
+
+/* Ссылка в меню внутри элемента с классом .active */
+
+.main-menu .active a {
+    color: white;
+    background: #0088cc;
+    border-radius: 5px 5px;
+    border: -2px solid #0066FF;
+}
+
+.main-menu a:hover {
+    background: #81DAF5;
+}
+
+
+
+/* Боковая панель - правая */
+
+.rightbar {
+   float: left;
+    width: 200px;
+    min-height: 500px;
+    padding: 10px;
+    margin-right:5px;
+    border:2px solid #DBA901;
+    background: #F2F5A9;
+    border-radius: 10px 10px;
+}
+
+.right-menu{
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    }
+.right-menu > li {
+    margin-bottom: 0px;
+}
+
+.right-menu a {
+   display: block;
+    padding: 8px 14px;
+    color: #0088cc;
+    border:2px solid #e5e5e5;
+    border-radius: 5px 5px;
+    margin-bottom:-1px;
+    text-decoration:none;
+    font-weight: bold;
+    width:150px;
+
+}
+
+/* Ссылка в меню внутри элемента с классом .active */
+
+.right-menu .active a {
+    color: white;
+    background: #0088cc;
+    border-radius: 5px 5px;
+    border: -5px solid #0066FF;
+}
+/
+.right-menu a:hover {
+    background: #81DAF5;
+}
+
+/* Информ блок*/
+.info {
+    clear: both;
+    min-height: 300px;
+    background: #ECF8E0;
+    border: 2px solid #A7A403;
+    border-radius: 20px 20px;
+    margin: 5px;
+    text-decoration:none;
+}
+
+.info h1{
+    font-family: "Times New Roman",
+     serif;
+     font-style: italic;
+    color: #EE2D47;
+    font-size: 20px;
+}
+
+.info p{
+    font-family: "Times New Roman",
+     serif;
+    color: #DF0101;
+    font-size: 20px;
+}
+
+/* Основной блок*/
+.content {
+  
+   clear:both;
+    min-height: 500px;
+    padding: 10px;
+    margin-right:5px;
+}
+
+.content{
+
+}
+
+
+.column3 {
+    float: left;
+    width: 173px;
+    min-height: 500px;
+    padding: 10px;
+    border: 2px solid #0066FF;
+    border-radius: 5px 5px;
+}
+
+
+
+.column5 {
+    float: right;
+    width: 120px;
+    min-height: 50px;
+}
+
+.column6 {
+    float: right;
+    width: 120px;
+    min-height: 50px;
+}
+
+
+/* Стили содержания */
+.hidden {
+    display: block;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo p {
+    margin: 0;
+}
+
+.menu {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    background: #2c3e50;
+    border-radius: 5px;
+}
+
+.feature {
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-logo {
+    padding: 10px;
+}
+
+.clearfix {
+     clear:both;
+    height: 0px;
+    background: #e74c3c;
+}
+
+
+/* Класс псевдораспорки */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Просто добавлены размеры и фон для псевдоэлемента,
+   чтобы посмотреть, где он находится */
+.clearfix-visible:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+    height: 10px;
+    background: #e74c3c;
+}
+
+
+
+/*Подвал*/
+.footer {
+
+        margin: 0;
+        padding: 5;
+        list-style-type: none;
+        border: 0.1px solid #0066FF;
+        border-radius: 20px 20px;
+   
+        height: 50px;
+        text-align: right;
+         background-color: #33ADFF;
+        border: 2px solid #0066FF;
+        font-size: 12px
+        color:white;   
+        clear: both;
+}
+
+.footer h5 {
+    color: white ;font:15px Tahoma;
+    text-decoration: none;
+}
+
+
+
+
+/*.left-column {
+    float: left;
+    width: 120px;
+    min-height: 100px;
+    background-color: #fcf8e3;
+
+    margin-bottom: 15px;
+    padding: 10px 25px 10px 25px;
+}
+
+.right-column {
+    float: right;
+    width: 120;
+    min-height: 100px;
+    background-color: #d9edf7;
+} */
+/*
+.container {
+    width: auto;
+    margin: auto;
+
+    box-shadow: 0 0 2px #cccccc;
+}*/
